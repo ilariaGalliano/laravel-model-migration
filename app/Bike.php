@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Car extends Model
+class Bike extends Model
 {
-    //Car
+    //Bike
 }

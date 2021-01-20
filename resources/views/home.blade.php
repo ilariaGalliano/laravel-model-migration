@@ -4,8 +4,8 @@
 
     <main>
         <div>
-            <h3>Cars</h3>
-            <p>Shop:</p>
+            <h2>Shop</h2>
+            <h3>Our Cars:</h3>
         </div>
         <ul>
             @foreach ($cars as $car)
@@ -20,9 +20,24 @@
                     
                 </li>
             @endforeach
-            
+    
         </ul>
+
+
+        <section id="app">
+            <h3>Our Bikes:</h3>
+            <ul>
+                <li v-for="bike in bikes">
+                    <h4>@{{bike.modello}}</h4>
+                    <div>@{{bike.marca}}</div>
+                    <div>@{{bike.targa}}</div>
+                </li>
+            </ul>
+        </section>
     </main>
+
+    <!-- Js --> 
+    <script src="{{ asset('js/app.js') }}"></script>
 
 @endsection
 
